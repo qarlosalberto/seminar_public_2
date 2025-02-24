@@ -90,7 +90,7 @@ begin
     begin
         if rising_edge(clk) then
             if (regs2user.operation_mode_strobe = '1') then
-                operation_in <= regs2user.operation_mode_select_operation_mode(0);
+                operation_in <= regs2user.operation_mode_operation_mode(0);
             end if;
         end if;
     end process op_proc;
