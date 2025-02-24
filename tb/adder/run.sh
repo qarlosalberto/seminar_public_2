@@ -1,0 +1,1 @@
+make SIM=ghdl TOPLEVEL_LANG=vhdl TOPLEVEL=adder_wrapper MODULE=test_adder
