@@ -38,8 +38,8 @@ architecture bench of sincos_tb is
     signal finish_test : boolean := false;
 begin
 
-    sin_data <= m_axis_dout_tdata(cnt_DATA_WIDTH - 1 downto 0);
-    cos_data <= m_axis_dout_tdata(cnt_DATA_WIDTH * 2 - 1 downto cnt_DATA_WIDTH);
+    cos_data <= m_axis_dout_tdata(cnt_DATA_WIDTH - 1 downto 0);
+    sin_data <= m_axis_dout_tdata(cnt_DATA_WIDTH * 2 - 1 downto cnt_DATA_WIDTH);
 
     sincos_inst : entity dsp.sincos
         port map (
